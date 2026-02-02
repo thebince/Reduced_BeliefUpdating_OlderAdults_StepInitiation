@@ -3,8 +3,6 @@
 # set working directory 
 library(rstudioapi)
 setwd(dirname(getActiveDocumentContext()$path))
-getwd()
-setwd("D:/ISPGR/ISPGR_COP/DataCuration")
 
 # library
 library(lme4)
@@ -66,4 +64,5 @@ int_pot = plot_model(model_interaction, type = "int", terms = c("Consecutive_Go_
 print(int_pot)
 
 ggsave("interaction_trialhistory_group_APAOnset_edited_9x6.png", plot = int_pot, width = 9, height = 6, units = "cm", dpi = 600)
+
 

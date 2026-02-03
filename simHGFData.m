@@ -26,23 +26,6 @@ function sim_data = simHGFData(learningrate,betafour,inputs,pt_num,k)
     % Generate table
     sim_table = table;
 
-%     for i = 1:length(inputs)
-% 
-%         sim_table.trial(i) = i;
-% 
-%         if i <= length(inputs)/2
-%     
-%             sim_table.condition(i) = 1;
-%     
-%         else
-%     
-%             sim_table.condition(i) = 2;
-%     
-%         end
-%         
-%         sim_table.RTLiftOff(i) = exp(sim_data.y(i));
-% 
-%     end
 
     sim_table.simulation_num(1:length(inputs),1) = pt_num;
     sim_table.input_sequence(1:length(inputs),1) = k;
@@ -55,12 +38,13 @@ function sim_data = simHGFData(learningrate,betafour,inputs,pt_num,k)
     sim_table.condition(sim_table.condition == 0) = 1;
     sim_table.RTAPAOnset = exp(sim_data.y(:));
 
-    % Save table
+    % Save table (change it based on the running program) - 'Simulation_03122025_MG' or 'Simulation_03122025_MNG'
     foldername = 'Simulation_03122025_MNG';
     tablename = sprintf('simdata_learningrate%.2d_betafour%.2d_inputs%.2d_RT.csv',learningrate,betafour,k);
     fullpath = fullfile(foldername,tablename);
     writetable(sim_table,fullpath);
 
     fprintf('Simulation over. Data saved.\n');
+
 
 end

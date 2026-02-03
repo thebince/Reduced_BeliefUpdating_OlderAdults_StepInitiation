@@ -1,6 +1,7 @@
-%% Script to run simulations for different om and betafour
-% Model Parameters of Perceptual and Response Model
+%% Script to run simulations for different om and betafour for posterior predictive checks
 % Date - 03/12/2025
+
+% Model Parameters of Perceptual and Response Model
 prc_young = [NaN 0 1 NaN 0.1000 1 NaN	0 0 1 1 NaN -2.730 1.367];
 prc_old = [NaN 0 1 NaN 0.1000 1 NaN	0 0 1 1 NaN -3.909 1.367];
 priormus_young_b4 = [5.379 0.093 -1.559 1.835 0.122 0.07];
@@ -214,7 +215,3 @@ for k = 1:50
 end
 
 writetable(allData_MNG,'simulatedRT_mngmg_50inputs.csv')
-%% Combine all conditions
-
-bigtable = vertcat(allData,allData_MNG);
-writetable(bigtable,'simulatedRT_100inputs.csv')

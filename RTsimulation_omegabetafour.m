@@ -1,4 +1,5 @@
 %% Script to run simulations for different om and betafour for posterior predictive checks
+% Create folders with names 'Simulation_03122025_MG' and 'Simulation_03122025_MNG'
 % Date - 03/12/2025
 
 % Model Parameters of Perceptual and Response Model
@@ -215,3 +216,4 @@ for k = 1:50
 end
 
 writetable(allData_MNG,'simulatedRT_mngmg_50inputs.csv')
+

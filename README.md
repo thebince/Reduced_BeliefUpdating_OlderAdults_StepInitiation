@@ -22,4 +22,4 @@ To fit RT data to HGF, make sure to follow this order:
 4. Run fit_realdataHGF_posturalonset (../code)
 
 After fitting the HGF to one participant, you can display the belief trajectories across each level as shown below. To plot thus, use tapas_hgf_binary_plotTraj (in ../tapas-master/HGF).
-![image_alt](https://github.com/thebince/Reduced_BeliefUpdating_OlderAdults_StepInitiation/blob/3017555a345f9125f5e47032541ad956c9d53c55/HGFposteriorexpectations_exampleparticipant_png.png)
+![image_alt](https://github.com/thebince/Reduced_BeliefUpdating_OlderAdults_StepInitiation/blob/2ea403f144da13bf0b265071a5f2562f4bc2e9db/HGFposteriorexpectations_exampleparticipant_png.png)

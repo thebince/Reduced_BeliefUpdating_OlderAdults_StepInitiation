@@ -3,7 +3,7 @@ This repository contains data and code to reproduce results from the paper: Redu
 
 ### Software requirements
 
-Software  | Version
+Software  |Version
 --------- | -------------
 MATLAB    | R2022b
 JASP      | 0.19.2.0

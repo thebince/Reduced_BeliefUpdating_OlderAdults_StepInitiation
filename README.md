@@ -20,3 +20,5 @@ To fit RT data to HGF, make sure to follow this order:
 2. Add tapas-master folder into the MATLAB path
 3. Set priors for the Beta parameters in tapas_logrt_linear_binary_config (../tapas-master/HGF)
 4. Run fit_realdataHGF_posturalonset (../code)
+
+After fitting the HGF to one participant, you can display the belief trajectories across each level

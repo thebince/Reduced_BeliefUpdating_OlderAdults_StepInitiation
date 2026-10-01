@@ -14,7 +14,7 @@ All statistics were run using JASP. Main results on the manuscript and supplemen
 
 ### Computational Modelling (HGF)
 
-To fit RT data to HGF, make sure to follow this order:
+To fit RT data to HGF, make sure to follow this instruction:
 
 1. Unzip tapas-master
 2. Add tapas-master folder into the MATLAB path
